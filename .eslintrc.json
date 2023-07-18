@@ -1,0 +1,23 @@
+{
+  "extends": ["next/core-web-vitals", "airbnb", "airbnb-typescript"],
+  "plugins": ["prettier"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "import/prefer-default-export": 0,
+    "max-len": ["warn", { "code": 150, "comments": 120 }],
+    "object-curly-newline": ["warn", { "consistent": true }],
+    "prettier/prettier": ["warn"],
+    "react/destructuring-assignment": 0,
+    "react/function-component-definition": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/require-default-props": 0,
+    "max-classes-per-file": "off",
+    "react/jsx-props-no-spreading": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "no-underscore-dangle": "off",
+    "@next/next/no-img-element": "off"
+  }
+}

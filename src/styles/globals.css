@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+#twamm-terminal * {
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+}
+
+#twamm-terminal *:focus {
+  outline: none;
+}
+
+/* TwammButton border gradient */
+#twamm-terminal .twamm-gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 0.5rem;
+  padding: 2px;
+  background: linear-gradient(91.26deg, #fcc00a 15.73%, #4ebae9 83.27%);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: source-out;
+}
+
+/* Custom scroll bar */
+.webkit-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.webkit-scrollbar::-webkit-scrollbar-thumb {
+  margin: 2px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #636363;
+}
+
+#twamm-terminal .twamm-gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 0.5rem;
+  padding: 2px;
+  background: linear-gradient(91.26deg, #fcc00a 15.73%, #4ebae9 83.27%);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: source-out;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+/* JupButton border gradient */
+#twamm-terminal .v2-border-gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1px;
+  background: linear-gradient(
+    91.26deg,
+    rgba(250, 196, 58, 0.5) 15.73%,
+    rgba(113, 229, 237, 0.5) 83.27%
+  );
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: source-out;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#twamm-terminal .v2-border-gradient-left.v2-border-gradient::before {
+  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+#twamm-terminal .v2-border-gradient-center.v2-border-gradient::before {
+  border-radius: 0.75rem;
+}
+#twamm-terminal .v2-border-gradient-right.v2-border-gradient::before {
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+}
