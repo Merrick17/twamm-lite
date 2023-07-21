@@ -5,7 +5,7 @@ const LPLogo: React.FC<{ width?: number; height?: number }> = ({
   height = 24,
 }) => (
   <img
-    src="/logo.png"
+    src="https://twamm-lite-merrick17.vercel.app/logo.png"
     width={width}
     height={height}
     alt="LP Finance"

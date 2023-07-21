@@ -19,7 +19,7 @@ const scriptDomain =
       // eslint-disable-next-line consistent-return
       return new URL(url).origin;
     }
-  })() || "https://lite.lp.finance";
+  })() || "https://twap.so/";
 
 async function loadRemote(
   id: string,
