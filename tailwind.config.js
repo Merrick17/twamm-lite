@@ -13,7 +13,7 @@ module.exports = {
     extend: {
       colors: {
         "twamm-input-light": "#EBEFF1",
-        "twamm-bg": "#3A3B43",
+        "twamm-bg": "#fff",
         "twamm-dark-bg": "#292A33",
         "twamm-jungle-green": "#24AE8F",
         "twamm-primary": "#FBA43A",
